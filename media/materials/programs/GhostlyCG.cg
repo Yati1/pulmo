@@ -1,0 +1,48 @@
+uniform float4x4 WorldViewProj;
+uniform float4x4 ViewInv;
+uniform float4x4 WorldXf;
+uniform float4x4 WorldITXf;
+
+
+struct appdata {
+    float3 Position	: POSITION;
+    float4 Normal	: NORMAL;
+    float4 Tangent	: TANGENT0;
+    float4 Binormal	: BINORMAL0;
+};
+
+struct vertOut
+{
+	float4 HPosition	: POSITION;
+	 // The following values are passed in "World" coordinates since
+    //   it tends to be the most flexible and easy for handling
+    //   reflections, sky lighting, and other "global" effects.
+    float3 WorldNormal	;
+    float3 WorldView	;
+};
+
+vertOut mainVS(appdata IN){
+	vertOut OUT = (vertOut)0;
+	float4 Po = float4(IN.Position, 1.0);
+	float3 Pw = mul(WorldXf,Po).xyz;
+	OUT.HPosition = mul(WorldViewProj, Po);
+	OUT.WorldView = normalize(float3(ViewInv[0].w,ViewInv[1].w,ViewInv[2].w) - Pw);
+	OUT.WorldNormal = normalize(mul(WorldITXf,IN.Normal).xyz);
+	
+	if(dot(OUT.WorldNormal,OUT.WorldView)<0)
+	{
+		OUT.WorldNormal = - OUT.WorldNormal; 
+	}
+	
+	
+	return OUT;
+}
+
+float4 mainPS(vertOut IN, uniform float4 ColorRGBA) : COLOR {
+	//float3 Vn = normalize(IN.WorldView);
+    //float3 Nn = normalize(IN.WorldNormal);
+	float3 Vn = IN.WorldView;
+	float3 Nn = IN.WorldNormal;
+	//return float4(1.0, 0.0, 0.0, lerp(1,0.1,dot(Nn,Vn)));
+	return float4(ColorRGBA.r, ColorRGBA.g, ColorRGBA.b, lerp(1.0,ColorRGBA.a,dot(Nn,Vn)));
+}

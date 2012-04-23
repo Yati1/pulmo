@@ -1,0 +1,117 @@
+// CG Vertex shader definition
+vertex_program Ghostly_VS cg            
+{
+        // Look in this source file for shader code
+    source GhostlyCG.cg
+        // Use this function for the vertex shader            
+    entry_point mainVS
+        // Compile the shader to vs_1_1 format    
+    //profiles vs_1_1 arbvp1
+profiles vs_2_0 arbvp1                 
+ 
+    // This block saves us from manually setting parameters in code
+        default_params                    
+    {
+                // Ogre will put the worldviewproj into our 'worldViewProj' parameter for us.
+        param_named_auto WorldViewProj worldviewproj_matrix
+        param_named_auto ViewInv inverse_view_matrix
+         param_named_auto WorldXf world_matrix
+        param_named_auto WorldITXf inverse_transpose_world_matrix
+        //param_named ColorRGBA float4 0 1 0 0.1
+                // Note that 'worldViewProj' is a parameter in the cg code.	
+    }
+}
+
+// CG Pixel shader definition
+fragment_program Ghostly_PS cg            
+{
+        // Look in this source file for shader code
+    source GhostlyCG.cg        
+        // Use this function for the pixel shader    
+    entry_point mainPS  
+        // Compile to ps_1_1 format    
+    //profiles ps_1_1 arbfp1
+profiles ps_2_0 arbfp1
+	default_params
+	{
+		param_named ColorRGBA float4 1 0 0 0
+	}
+}
+
+material GhostlyInner
+{
+        // Material has one technique
+    technique                    
+    {
+                // This technique has one pass
+        pass                    
+        {
+	
+	scene_blend add
+	depth_write off
+	// Make this pass use the vertex shader defined above
+            vertex_program_ref Ghostly_VS    
+            {
+            }
+                        // Make this pass use the pixel shader defined above
+            fragment_program_ref Ghostly_PS    
+            {
+            }
+        }
+        pass
+        {
+	scene_blend alpha_blend
+	depth_write off
+	cull_software front
+	cull_hardware none
+	vertex_program_ref Ghostly_VS    
+            {
+            }
+            // Make this pass use the pixel shader defined above
+            fragment_program_ref Ghostly_PS    
+            {
+            }
+        }
+	
+    }
+}
+
+material GhostlyBody
+{
+        // Material has one technique
+    technique                    
+    {
+                // This technique has one pass
+        pass                    
+        {
+	
+	scene_blend add
+	depth_write off
+	// Make this pass use the vertex shader defined above
+            vertex_program_ref Ghostly_VS    
+            {
+            }
+                        // Make this pass use the pixel shader defined above
+            fragment_program_ref Ghostly_PS    
+            {
+            }
+        }
+        pass
+        {
+	scene_blend alpha_blend
+	depth_write off
+	cull_software front
+	cull_hardware none
+	vertex_program_ref Ghostly_VS    
+            {
+            }
+            // Make this pass use the pixel shader defined above
+            fragment_program_ref Ghostly_PS    
+            {
+            }
+        }
+	
+    }
+}
+
+

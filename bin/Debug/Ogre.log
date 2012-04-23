@@ -1,0 +1,81 @@
+18:19:41: Creating resource group General
+18:19:41: Creating resource group Internal
+18:19:41: Creating resource group Autodetect
+18:19:41: SceneManagerFactory for type 'DefaultSceneManager' registered.
+18:19:42: Registering ResourceManager for type Material
+18:19:42: Registering ResourceManager for type Mesh
+18:19:42: Registering ResourceManager for type Skeleton
+18:19:42: MovableObjectFactory for type 'ParticleSystem' registered.
+18:19:42: OverlayElementFactory for type Panel registered.
+18:19:42: OverlayElementFactory for type BorderPanel registered.
+18:19:42: OverlayElementFactory for type TextArea registered.
+18:19:42: Registering ResourceManager for type Font
+18:19:42: ArchiveFactory for archive type FileSystem registered.
+18:19:42: ArchiveFactory for archive type Zip registered.
+18:19:42: DDS codec registering
+18:19:42: FreeImage version: 3.15.1
+18:19:42: This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
+18:19:42: Supported formats: bmp,ico,jpg,jif,jpeg,jpe,jng,koa,iff,lbm,mng,pbm,pbm,pcd,pcx,pgm,pgm,png,ppm,ppm,ras,tga,targa,tif,tiff,wap,wbmp,wbm,psd,cut,xbm,xpm,gif,hdr,g3,sgi,exr,j2k,j2c,jp2,pfm,pct,pict,pic,3fr,arw,bay,bmq,cap,cine,cr2,crw,cs1,dc2,dcr,drf,dsc,dng,erf,fff,ia,iiq,k25,kc2,kdc,mdc,mef,mos,mrw,nef,nrw,orf,pef,ptx,pxn,qtk,raf,raw,rdc,rw2,rwl,rwz,sr2,srf,sti
+18:19:42: Registering ResourceManager for type HighLevelGpuProgram
+18:19:42: Registering ResourceManager for type Compositor
+18:19:42: MovableObjectFactory for type 'Entity' registered.
+18:19:42: MovableObjectFactory for type 'Light' registered.
+18:19:42: MovableObjectFactory for type 'BillboardSet' registered.
+18:19:42: MovableObjectFactory for type 'ManualObject' registered.
+18:19:42: MovableObjectFactory for type 'BillboardChain' registered.
+18:19:42: MovableObjectFactory for type 'RibbonTrail' registered.
+18:19:42: Loading library .\RenderSystem_Direct3D9_d
+18:19:43: Installing plugin: D3D9 RenderSystem
+18:19:43: D3D9 : Direct3D9 Rendering Subsystem created.
+18:19:43: D3D9: Driver Detection Starts
+18:19:43: D3D9: Driver Detection Ends
+18:19:43: Plugin successfully installed
+18:19:43: Loading library .\RenderSystem_GL_d
+18:19:44: Installing plugin: GL RenderSystem
+18:19:44: OpenGL Rendering Subsystem created.
+18:19:54: Plugin successfully installed
+18:19:54: Loading library .\Plugin_ParticleFX_d
+18:19:54: Installing plugin: ParticleFX
+18:19:54: Particle Emitter Type 'Point' registered
+18:19:54: Particle Emitter Type 'Box' registered
+18:19:54: Particle Emitter Type 'Ellipsoid' registered
+18:19:54: Particle Emitter Type 'Cylinder' registered
+18:19:54: Particle Emitter Type 'Ring' registered
+18:19:54: Particle Emitter Type 'HollowEllipsoid' registered
+18:19:54: Particle Affector Type 'LinearForce' registered
+18:19:54: Particle Affector Type 'ColourFader' registered
+18:19:54: Particle Affector Type 'ColourFader2' registered
+18:19:54: Particle Affector Type 'ColourImage' registered
+18:19:54: Particle Affector Type 'ColourInterpolator' registered
+18:19:54: Particle Affector Type 'Scaler' registered
+18:19:54: Particle Affector Type 'Rotator' registered
+18:19:54: Particle Affector Type 'DirectionRandomiser' registered
+18:19:54: Particle Affector Type 'DeflectorPlane' registered
+18:19:54: Plugin successfully installed
+18:19:54: Loading library .\Plugin_CgProgramManager_d
+18:19:55: Installing plugin: Cg Program Manager
+18:19:55: Plugin successfully installed
+18:19:55: *-*-* OGRE Initialising
+18:19:55: *-*-* Version 1.7.4 (Cthugha)
+18:19:55: Creating resource group Essential
+18:19:55: Added resource location '../../media/packs/SdkTrays.zip' of type 'Zip' to resource group 'Essential'
+18:19:55: Added resource location '../../media' of type 'FileSystem' to resource group 'General'
+18:19:55: Creating resource group Popular
+18:19:55: Added resource location '../../media/fonts' of type 'FileSystem' to resource group 'Popular'
+18:19:55: Added resource location '../../media/materials/programs' of type 'FileSystem' to resource group 'Popular'
+18:19:55: Added resource location '../../media/materials/scripts' of type 'FileSystem' to resource group 'Popular'
+18:19:55: Added resource location '../../media/materials/textures' of type 'FileSystem' to resource group 'Popular'
+18:19:55: Added resource location '../../media/materials/textures/' of type 'FileSystem' to resource group 'Popular'
+18:19:55: Added resource location '../../media/models' of type 'FileSystem' to resource group 'Popular'
+18:19:55: Added resource location '../../media/scenes' of type 'FileSystem' to resource group 'Popular'
+18:19:55: Added resource location '../../media/particles' of type 'FileSystem' to resource group 'Popular'
+18:19:55: D3D9 : RenderSystem Option: Allow NVPerfHUD = No
+18:19:55: D3D9 : RenderSystem Option: FSAA = 0
+18:19:55: D3D9 : RenderSystem Option: Floating-point mode = Fastest
+18:19:55: D3D9 : RenderSystem Option: Full Screen = No
+18:19:55: D3D9 : RenderSystem Option: Rendering Device = Monitor-1-ATI Mobility Radeon HD 4650
+18:19:55: D3D9 : RenderSystem Option: Resource Creation Policy = Create on active device
+18:19:55: D3D9 : RenderSystem Option: VSync = No
+18:19:55: D3D9 : RenderSystem Option: VSync Interval = 1
+18:19:55: D3D9 : RenderSystem Option: Video Mode = 800 x 600 @ 32-bit colour
+18:19:55: D3D9 : RenderSystem Option: sRGB Gamma Conversion = No

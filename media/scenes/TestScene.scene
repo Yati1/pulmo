@@ -1,0 +1,54 @@
+<scene id="0" formatVersion="0.2.0" sceneManager="" minOgreVersion="" author="LFA Scene Manager v4.2 - www.lfa.com">
+    <environment>
+    </environment>
+    <nodes>
+        <node name="Player_StartNode" id="">
+            <position x="-151.3785568" y="32.98122091" z="-73.79165541" />
+            <rotation qx="0.003728140831" qy="0.702143671" qz="0.003676448731" qw="-0.7120160461" />
+            <scale x="1" y="1" z="1" />
+        </node>
+        <node name="MAIN_LIGHTNode" id="">
+            <position x="283.4140867" y="694.0281964" z="-333.1701135" />
+            <rotation qx="-0.1486547574" qy="0.847069963" qz="0.40403158" qw="0.3116612317" />
+            <scale x="1" y="1" z="1" />
+            <node name="MAIN_LIGHT_mayaToOgreAdjustmentNode">
+                <position x="0" y="0" z="0" />
+                <rotation qx="1" qy="0" qz="0" qw="0" />
+                <scale x="1" y="1" z="1" />
+                <light name="MAIN_LIGHT" id="" type="directional" visible="true" castShadows="false">
+                    <colourDiffuse r="0.4348327518" g="0.4622782767" b="0.7647058964" a="1" />
+                    <colourSpecular r="1" g="1" b="1" a="1" />
+                    <lightAttenuation range="10" constant="1" linear="0" quadratic="0" />
+                </light>
+            </node>
+        </node>
+        <node name="Sound1Node" id="">
+            <position x="-50.95422028" y="20.7896258" z="-74.95954728" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <scale x="1" y="1" z="1" />
+            <sound name="Sound1" fileName="UNGO.mp3" streamed="true" looping="true" size="0.3" />        </node>
+        <node name="Sound2Node" id="">
+            <position x="98.90396332" y="13.31933547" z="182.1445426" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <scale x="1" y="1" z="1" />
+            <sound name="Sound2" fileName="click.ogg" streamed="false" looping="true" size="0.5" />        </node>
+        <node name="pCube1Node" id="">
+            <position x="-91.89138588" y="23.58595091" z="-74.15493415" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <scale x="1" y="1" z="1" />
+            <entity name="pCube1" id="" meshFile="pCube1.mesh" static="true" castShadows="false" />
+        </node>
+        <node name="trigger1Node" id="">
+            <position x="-96.84322511" y="16.54453395" z="-71.90662092" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <scale x="1" y="1" z="1" />
+            <trigger shape="cube" size="5.0" luaObj="TestTrigger" luaFile="TestTrigger.lua" />        </node>
+        <node name="turtleHolderNode" id="">
+            <position x="0" y="14.92519711" z="-76.26349121" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <scale x="1" y="1" z="1" />
+            <entity name="turtleHolder" id="NO_PHYSX" meshFile="turtle.mesh" static="false" castShadows="true">
+            </entity>
+        </node>
+    </nodes>
+</scene>

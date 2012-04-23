@@ -1,0 +1,3 @@
+﻿  TTTGameState.cpp
+c:\users\yati\documents\games development\ogre\work\gameframe\gameframe\tttgamestate.cpp(21): warning C4482: nonstandard extension used: enum 'Token::PlayerType' used in qualified name
+c:\users\yati\documents\games development\ogre\work\gameframe\gameframe\tttgamestate.cpp(51): error C2065: 'm_pSelectorNode' : undeclared identifier

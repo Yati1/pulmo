@@ -1,0 +1,12 @@
+Console
+{
+	type 		truetype
+	source 		ctrl_freak.ttf
+	size 		32
+	resolution 	100
+	
+	//		type 		truetype
+	//source 		ctrl_freak.ttf
+	//size 		20
+	//resolution  96
+}

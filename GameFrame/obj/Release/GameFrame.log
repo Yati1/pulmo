@@ -1,0 +1,24 @@
+﻿Build started 4/22/2012 9:19:52 PM.
+     1>Project "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\GameFrame\GameFrame.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "obj\Release\GameFrame.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         GameFrame.vcxproj -> C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\bin\Release\Plumo.exe
+       PostBuildEvent:
+         Description: Copying exe to samples bin directory ...
+         copy "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\bin\Release\\Plumo.exe" "C:\OgreSDK\OgreSDK_vc10_v1-7-4\Bin\Release"
+         :VCEnd
+                 1 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "obj\Release\GameFrame.unsuccessfulbuild".
+         Touching "obj\Release\GameFrame.lastbuildstate".
+     1>Done Building Project "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\GameFrame\GameFrame.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.52

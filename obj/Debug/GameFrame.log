@@ -1,0 +1,116 @@
+﻿Build started 4/22/2012 9:22:21 PM.
+     1>Project "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\GameFrame\GameFrame.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\GameFrame.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\OgreSDK\Hikari Source - v0.3\Hikari\include" /I"C:\OgreSDK\nxogre\betajaen-nxogre-e7f92bb\..\critter\sdk\\" /Iinclude /I"C:\OgreSDK\OgreSDK_vc10_v1-7-4\include" /I"C:\OgreSDK\OgreSDK_vc10_v1-7-4\include\OIS" /I"C:\OgreSDK\OgreSDK_vc10_v1-7-4\include\OGRE" /I"C:\OgreSDK\OgreSDK_vc10_v1-7-4\Samples\Common\include" /I"C:\OgreSDK\nxogre\betajaen-nxogre-e7f92bb\SDK\\" /I"C:\Program Files\FMOD SoundSystem\FMOD Programmers API Windows\api\inc" /I"C:\OgreSDK\OgreSDK_vc10_v1-7-4\boost_1_47" /I"C:\Program Files\Lua\5.1\include" /I"C:\OgreSDK\luabind-0.9.1\luabind-0.9.1" /I"C:\boost 1.47.0\boost_1_47_0" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /Gy /fp:fast /Zc:wchar_t /Zc:forScope /GR /Fo"C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\\" /Fd"C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TestState.cpp
+         TestState.cpp
+     1>c:\users\yati\documents\games development\ogre\plumo\gameframe\soundnode.h(56): warning C4172: returning address of local variable or temporary
+     1>c:\users\yati\documents\games development\ogre\plumo\gameframe\teststate.cpp(295): warning C4018: '<=' : signed/unsigned mismatch
+     1>c:\program files\microsoft visual studio 10.0\vc\include\xutility(2227): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files\microsoft visual studio 10.0\vc\include\xutility(2212) : see declaration of 'std::_Copy_impl'
+                 c:\ogresdk\nxogre\betajaen-nxogre-e7f92bb\sdk\nxogrebuffer.h(131) : see reference to function template instantiation '_OutIt std::copy<T*,T*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=float *,
+                     T=float,
+                     _InIt=float *
+                 ]
+                 c:\ogresdk\nxogre\betajaen-nxogre-e7f92bb\sdk\nxogrebuffer.h(122) : while compiling class template member function 'void NxOgre::buffer<T>::resize(size_t)'
+                 with
+                 [
+                     T=float
+                 ]
+                 c:\ogresdk\nxogre\betajaen-nxogre-e7f92bb\sdk\nxogrephysxparticledata.h(104) : see reference to class template instantiation 'NxOgre::buffer<T>' being compiled
+                 with
+                 [
+                     T=float
+                 ]
+     1>c:\program files\microsoft visual studio 10.0\vc\include\xutility(2227): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files\microsoft visual studio 10.0\vc\include\xutility(2212) : see declaration of 'std::_Copy_impl'
+                 c:\ogresdk\nxogre\betajaen-nxogre-e7f92bb\sdk\nxogrebuffer.h(131) : see reference to function template instantiation '_OutIt std::copy<T*,T*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=unsigned int *,
+                     T=unsigned int,
+                     _InIt=unsigned int *
+                 ]
+                 c:\ogresdk\nxogre\betajaen-nxogre-e7f92bb\sdk\nxogrebuffer.h(122) : while compiling class template member function 'void NxOgre::buffer<T>::resize(size_t)'
+                 with
+                 [
+                     T=unsigned int
+                 ]
+                 c:\ogresdk\nxogre\betajaen-nxogre-e7f92bb\sdk\nxogrephysxparticledata.h(112) : see reference to class template instantiation 'NxOgre::buffer<T>' being compiled
+                 with
+                 [
+                     T=unsigned int
+                 ]
+       ResourceCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\bin\Debug\\Plumo.exe" /VERBOSE /INCREMENTAL /NOLOGO /LIBPATH:"C:\OgreSDK\Hikari Source - v0.3\Hikari\lib" /LIBPATH:"C:\Program Files\FMOD SoundSystem\FMOD Programmers API Windows\api\lib" /LIBPATH:"C:\OgreSDK\OgreSDK_vc10_v1-7-4\lib\debug" /LIBPATH:"C:\OgreSDK\nxogre\betajaen-nxogre-e7f92bb\..\critter\sdk" /LIBPATH:"C:\OgreSDK\nxogre\betajaen-nxogre-e7f92bb\SDK" /LIBPATH:"C:\OgreSDK\OgreSDK_vc10_v1-7-4\boost_1_47\lib" /LIBPATH:"C:\Program Files\Lua\5.1\lib" /LIBPATH:"C:\OgreSDK\luabind-0.9.1\luabind-0.9.1\bin\msvc-10.0\debug\link-static" Hikari.lib OgreMain_d.lib OIS_d.lib fmodex_vc.lib NxOgreDebug.lib CritterDebugStatic.lib lua5.1.lib lua51.lib libluabindd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\Plumo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\bin\Debug\/GameFrame.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\bin\Debug\Plumo.lib" /MACHINE:X86 "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\ScenePLay.res"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\Plumo.exe.embed.manifest.res"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\AbstractGameCore.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\Actor.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\ActorManager.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\CameraController.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\Controller.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\CustomTrayManager.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\DotSceneLoader.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\EditString.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\Event.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\EventManager.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\FPSCamActor.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\GameApplication.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\GameState.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\InputSystem.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\Level.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\LuaConsole.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\LuaInterpreter.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\LuaScriptManager.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\Main.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\MovableSign.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\ParticleEffectManager.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\PhysicsSystem.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\PlayerController.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\Projectile.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\PulmoActor.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\PulmoController.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\PulmoGame.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\PulmoMainMenu.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\SoundNode.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\SoundNodeManager.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\SoundSystem.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\TestState.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\ThirdPersonCameraController.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\tinystr.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\tinyxml.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\tinyxmlerror.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\tinyxmlparser.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\TriggerManager.obj"
+         "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\UserInterface.obj"
+         Generating non-SAFESEH image.
+         Starting pass 2
+              TestState.obj
+         Finished pass 2
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\Plumo.exe.embed.manifest" /manifest "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\Plumo.exe.intermediate.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         GameFrame.vcxproj -> C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\bin\Debug\Plumo.exe
+       PostBuildEvent:
+         Description: Copying exe to samples bin directory ...
+         copy "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\bin\Debug\\Plumo.exe" "C:\OgreSDK\OgreSDK_vc10_v1-7-4\Bin\Debug"
+         :VCEnd
+                 1 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\GameFrame.unsuccessfulbuild".
+         Touching "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\\obj\Debug\GameFrame.lastbuildstate".
+     1>Done Building Project "C:\Users\Yati\Documents\Games Development\Ogre\Plumo\GameFrame\GameFrame.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:44.65

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractGameCore.h" />
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="ActorManager.h" />
+    <ClInclude Include="assert.hpp" />
+    <ClInclude Include="CameraController.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="CustomTrayManager.h" />
+    <ClInclude Include="DataEvent.h" />
+    <ClInclude Include="DotSceneLoader.h" />
+    <ClInclude Include="EditString.h" />
+    <ClInclude Include="EngineLuaBinding.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventListener.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="FPSCamActor.h" />
+    <ClInclude Include="GameApplication.h" />
+    <ClInclude Include="GameEvents.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="GAME_STATE_ID.h" />
+    <ClInclude Include="InputSystem.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="LuaConsole.h" />
+    <ClInclude Include="LuaFSM.h" />
+    <ClInclude Include="LuaInterpreter.h" />
+    <ClInclude Include="LuaScriptManager.h" />
+    <ClInclude Include="MovableSign.h" />
+    <ClInclude Include="ParticleEffectManager.h" />
+    <ClInclude Include="PhysicsSystem.h" />
+    <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="PulmoActor.h" />
+    <ClInclude Include="PulmoController.h" />
+    <ClInclude Include="PulmoGame.h" />
+    <ClInclude Include="PulmoMainMenu.h" />
+    <ClInclude Include="Projectile.h" />
+    <ClInclude Include="RandomUtil.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResourceLocationDefinition.h" />
+    <ClInclude Include="Simpleton.h" />
+    <ClInclude Include="SoundNode.h" />
+    <ClInclude Include="SoundNodeManager.h" />
+    <ClInclude Include="SoundSystem.h" />
+    <ClInclude Include="StateMachine.h" />
+    <ClInclude Include="TestState.h" />
+    <ClInclude Include="ThirdPersonCameraController.h" />
+    <ClInclude Include="tinystr.h" />
+    <ClInclude Include="tinyxml.h" />
+    <ClInclude Include="TriggerManager.h" />
+    <ClInclude Include="UserInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractGameCore.cpp" />
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="ActorManager.cpp" />
+    <ClCompile Include="CameraController.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="CustomTrayManager.cpp" />
+    <ClCompile Include="DotSceneLoader.cpp" />
+    <ClCompile Include="EditString.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="FPSCamActor.cpp" />
+    <ClCompile Include="GameApplication.cpp" />
+    <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="InputSystem.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="LuaConsole.cpp" />
+    <ClCompile Include="LuaInterpreter.cpp" />
+    <ClCompile Include="LuaScriptManager.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MovableSign.cpp" />
+    <ClCompile Include="ParticleEffectManager.cpp" />
+    <ClCompile Include="PhysicsSystem.cpp" />
+    <ClCompile Include="PlayerController.cpp" />
+    <ClCompile Include="Projectile.cpp" />
+    <ClCompile Include="PulmoActor.cpp" />
+    <ClCompile Include="PulmoController.cpp" />
+    <ClCompile Include="PulmoGame.cpp" />
+    <ClCompile Include="PulmoMainMenu.cpp" />
+    <ClCompile Include="SoundNode.cpp" />
+    <ClCompile Include="SoundNodeManager.cpp" />
+    <ClCompile Include="SoundSystem.cpp" />
+    <ClCompile Include="TestState.cpp" />
+    <ClCompile Include="ThirdPersonCameraController.cpp" />
+    <ClCompile Include="tinystr.cpp" />
+    <ClCompile Include="tinyxml.cpp" />
+    <ClCompile Include="tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxmlparser.cpp" />
+    <ClCompile Include="TriggerManager.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\media\lua scripts\Essential.lua" />
+    <None Include="..\media\lua scripts\Level1.lua" />
+    <None Include="..\media\lua scripts\TestTrigger.lua" />
+    <None Include="..\media\materials\programs\GhostlyCG.cg" />
+    <None Include="..\media\materials\scripts\console.material" />
+    <None Include="..\media\materials\scripts\Ghostly.material" />
+    <None Include="..\media\materials\scripts\TerrainTest.material" />
+    <None Include="..\media\scenes\TestScene.scene">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ScenePLay.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{79735545-C4F5-4641-B236-C884D2AEC014}</ProjectGuid>
+    <RootNamespace>GameFrame</RootNamespace>
+    <ProjectName>GameFrame</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)\obj\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <TargetName>Plumo</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>Plumo</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(HIKARI_HOME)\include;$(NXOGRE_DIR)\..\critter\sdk\;include;$(OGRE_HOME)\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(NXOGRE_DIR)\SDK\;$(FMOD_HOME)\inc;$(OGRE_HOME)\boost_1_47;$(LUA_DEV)\include;$(LUA_BIND);$(OUR_BOOST);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)/GameFrame.pdb</ProgramDatabaseFile>
+      <OutputFile>$(OutDir)\$(TargetFileName)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(HIKARI_HOME)\lib;$(FMOD_HOME)\lib;$(OGRE_HOME)\lib\debug;$(NXOGRE_DIR)\..\critter\sdk;$(NXOGRE_DIR)\SDK;$(OGRE_HOME)\boost_1_47\lib;$(LUA_DEV)\lib;$(LUA_BIND)\bin\msvc-10.0\debug\link-static;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Hikari.lib;OgreMain_d.lib;OIS_d.lib;fmodex_vc.lib;NxOgreDebug.lib;CritterDebugStatic.lib;lua5.1.lib;lua51.lib;libluabindd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerbose</ShowProgress>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "$(OutDir)\$(TargetFileName)" "$(OGRE_HOME)\Bin\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>$(HIKARI_HOME)\include;$(NXOGRE_DIR)\..\critter\sdk\;include;$(OGRE_HOME)\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(NXOGRE_DIR)\SDK\;$(FMOD_HOME)\inc;$(OGRE_HOME)\boost_1_47;$(LUA_DEV)\include;$(LUA_BIND);$(OUR_BOOST);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>$(HIKARI_HOME)\lib;$(NXOGRE_DIR)\SDK;$(NXOGRE_DIR)\..\critter\sdk;$(FMOD_HOME)\lib;$(OGRE_HOME)\lib\release;$(OGRE_HOME)\boost_1_47\lib;$(LUA_DEV)\lib;$(LUA_BIND)\bin\msvc-10.0\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Hikari.lib;OgreMain.lib;OIS.lib;fmodex_vc.lib;NxOgre.lib;CritterStatic.lib;lua5.1.lib;lua51.lib;luabind.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>LinkVerbose</ShowProgress>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "$(OutDir)\$(TargetFileName)" "$(OGRE_HOME)\Bin\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

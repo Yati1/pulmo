@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{22558e48-8899-440d-b68d-f6cf339abb96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{56cb60e0-cdba-4066-bcd5-edb64d256a15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Engine\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{15e1fb2c-de03-4af2-83b6-d71487c21dd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Header Files">
+      <UniqueIdentifier>{8ffc44d2-f96c-40e6-8b3a-a8e3c9d7b04c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Source Files">
+      <UniqueIdentifier>{a473ff77-87ec-4d14-9eb7-354594fabc20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Event System">
+      <UniqueIdentifier>{c785b8f1-2942-4458-ad60-2ee049d82e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Event System\Headers">
+      <UniqueIdentifier>{b2fd4d4c-b8c2-433b-b56f-f1c409cb6d3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Event System\Source">
+      <UniqueIdentifier>{84dd89af-7ac7-482f-87b2-824d28037d7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Headers">
+      <UniqueIdentifier>{6842e0f4-dc13-41e4-9798-cb322b7a7b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Source">
+      <UniqueIdentifier>{0d0782e2-0189-4e8c-bcc8-ba70869c1391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Lua Scripts">
+      <UniqueIdentifier>{32b5ac5c-8e72-499e-a9cc-b9235235bff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\FSM">
+      <UniqueIdentifier>{6f59d905-c2ef-400a-8a46-ee5a4be4dfb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media/materials">
+      <UniqueIdentifier>{575e8268-dc75-4dca-80ff-1312f0a862c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media/materials\programs">
+      <UniqueIdentifier>{f2121fca-304f-4b71-84f8-810a374dc723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media/materials\scripts">
+      <UniqueIdentifier>{5e3721bd-e2db-42ff-a438-07d50ad644f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Media/scenes">
+      <UniqueIdentifier>{a5f05bd0-0ded-41cd-a6d9-702a68cbc9e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractGameCore.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundSystem.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameApplication.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataEvent.h">
+      <Filter>Utility\Event System\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Utility\Event System\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EventListener.h">
+      <Filter>Utility\Event System\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>Utility\Event System\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEvents.h">
+      <Filter>Utility\Event System\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomTrayManager.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DotSceneLoader.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceLocationDefinition.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="assert.hpp">
+      <Filter>Utility\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Simpleton.h">
+      <Filter>Utility\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="tinystr.h">
+      <Filter>Utility\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml.h">
+      <Filter>Utility\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MovableSign.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestState.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraController.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundNode.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundNodeManager.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsSystem.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdPersonCameraController.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActorManager.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEffectManager.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomUtil.h">
+      <Filter>Utility\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaConsole.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaInterpreter.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaScriptManager.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditString.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineLuaBinding.h">
+      <Filter>Engine\Lua Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME_STATE_ID.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine.h">
+      <Filter>Utility\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaFSM.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TriggerManager.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PulmoMainMenu.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PulmoGame.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FPSCamActor.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PulmoActor.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PulmoController.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Game\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractGameCore.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSystem.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundSystem.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameApplication.cpp">
+      <Filter>Game\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Utility\Event System\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Utility\Event System\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomTrayManager.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DotSceneLoader.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tinystr.cpp">
+      <Filter>Utility\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml.cpp">
+      <Filter>Utility\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlerror.cpp">
+      <Filter>Utility\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlparser.cpp">
+      <Filter>Utility\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MovableSign.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestState.cpp">
+      <Filter>Game\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraController.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundNode.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundNodeManager.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsSystem.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdPersonCameraController.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActorManager.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEffectManager.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaConsole.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaInterpreter.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaScriptManager.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditString.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TriggerManager.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PulmoMainMenu.cpp">
+      <Filter>Game\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PulmoGame.cpp">
+      <Filter>Game\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FPSCamActor.cpp">
+      <Filter>Game\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PulmoActor.cpp">
+      <Filter>Game\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInterface.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PulmoController.cpp">
+      <Filter>Game\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Game\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\media\lua scripts\Essential.lua">
+      <Filter>Engine\Lua Scripts</Filter>
+    </None>
+    <None Include="..\media\lua scripts\TestTrigger.lua">
+      <Filter>Engine\Lua Scripts</Filter>
+    </None>
+    <None Include="..\media\materials\scripts\console.material">
+      <Filter>Media/materials\scripts</Filter>
+    </None>
+    <None Include="..\media\materials\scripts\Ghostly.material">
+      <Filter>Media/materials\scripts</Filter>
+    </None>
+    <None Include="..\media\materials\programs\GhostlyCG.cg">
+      <Filter>Media/materials\programs</Filter>
+    </None>
+    <None Include="..\media\scenes\TestScene.scene">
+      <Filter>Media/scenes</Filter>
+    </None>
+    <None Include="..\media\materials\scripts\TerrainTest.material">
+      <Filter>Media/materials\scripts</Filter>
+    </None>
+    <None Include="..\media\lua scripts\Level1.lua">
+      <Filter>Engine\Lua Scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ScenePLay.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
